@@ -38,6 +38,11 @@ Nominal  0.957  0.944  0.655
 PIA      0.696  0.497  0.167  0.907
 ```
 
+![PIA evaluation](artifacts/pia_evaluation.png)
+
+*Trajectory tracking, lateral error, speed profile, lap times, world-model training
+curves and live adaptation error for the reference run.*
+
 The world model itself converges to a **3.4 mm** one-step position RMSE on held-out
 simulator episodes, and PIA re-fits the live dynamics from ~2 000 transitions (500
 gradient updates, zero trust-region rejections) without forgetting the offline prior.
